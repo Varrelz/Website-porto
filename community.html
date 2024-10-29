@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="TanakaDomp Community" />
+  <meta property="og:image" content="https://f.top4top.io/p_3212lghvw1.jpg" />
+  <meta property="og:description" content="WhatsApp Bot Community, Sharing Code & Scraper, Discussing about WhatsApp Ai" />
+  <meta name="twitter:image:src" content="https://f.top4top.io/p_3212lghvw1.jpg" />
+  <title>Community</title>
+  <link
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow-x: hidden;
+      color: #333;
+    }
+    * {
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }  
+    .profile-pic {
+      width: 320px;
+      height: 320px;
+      margin: 20px auto 10px;
+      animation: bounce 5.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+      }
+      40% {
+      transform: translateY(-10px);
+      }
+      60% {
+      transform: translateY(-5px);
+     }
+   }
+
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 10px 0;
+      color: #5d5d5d;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #55555594;
+      margin-bottom: 20px;
+    }
+    .social-icons {
+      margin: 20px 0;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #5d5d5d;
+      font-size: 28px;
+      transition: color 0.3s;
+    }
+    .section {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      text-align: left;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .section-title {
+      font-size: 15px;
+      color: #3d3d3d97;
+      margin-bottom: 9px;
+    }
+    .link-item {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+    }
+    .link-item i {
+      font-size: 26px;
+      margin-right: 10px;
+      color: #000;
+    }
+    .link-item span {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <script>
+    function renderPage() {
+      const root = document.getElementById('root');
+
+      const container = document.createElement('div');
+      container.className = 'container';
+
+      const profilePic = document.createElement('img');
+      profilePic.className = 'profile-pic';
+      profilePic.src = 'https://l.top4top.io/p_3224f06181.png';
+      profilePic.alt = 'profile picture';
+      container.appendChild(profilePic);
+
+      const title = document.createElement('div');
+      title.className = 'title';
+      title.innerHTML = 'TanakaDomp - Community <i class="fas fa-check-circle"></i>';
+      container.appendChild(title);
+
+      const subtitle = document.createElement('div');
+      subtitle.className = 'subtitle';
+      subtitle.textContent = "Let's learn together with the Domp team";
+      container.appendChild(subtitle);
+
+      function addSection(titleText, links) {
+        const section = document.createElement('div');
+        section.className = 'section';
+
+        const sectionTitle = document.createElement('div');
+        sectionTitle.className = 'section-title';
+        sectionTitle.textContent = titleText;
+        section.appendChild(sectionTitle);
+
+        links.forEach(({ href, icon, text }) => {
+          const linkItem = document.createElement('a');
+          linkItem.className = 'link-item';
+          linkItem.href = href;
+          linkItem.target = '_blank';
+          linkItem.rel = 'noopener noreferrer';
+          linkItem.innerHTML = `<i class="${icon}"></i><span>${text}</span>`;
+          section.appendChild(linkItem);
+        });
+
+        container.appendChild(section);
+      }
+
+      addSection('Community - WhatsApp Bot', [
+        { href: 'https://chat.whatsapp.com/INEH8trCTJWADQk4myKTFI', icon: 'fab fa-whatsapp', text: 'Royal Roundtable Groups' },
+        { href: 'https://whatsapp.com/channel/0029VaW25g5F1YlKczMRmd1h', icon: 'fab fa-whatsapp', text: 'Tanaka Sense Channels' },
+        { href: 'https://chat.whatsapp.com/D8f4cuIthivEatzSoTapiG', icon: 'fab fa-whatsapp', text: 'LilyChanj - WhatsApp Groups' },
+        { href: 'https://chat.whatsapp.com/IMhkP5rhgdFJWEvBqYRoUt', icon: 'fab fa-whatsapp', text: 'Hann Universe!!!' },
+        { href: 'https://chat.whatsapp.com/KzG7ih7qSWlL4b7fzqZTvl', icon: 'fab fa-whatsapp', text: 'Shooting Star' }
+      ]);
+
+      root.appendChild(container);
+    }
+
+    renderPage();
+  </script>
+</body>
+  </html>

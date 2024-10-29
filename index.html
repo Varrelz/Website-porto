@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Portofolio TanakaDomp</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        /* Mencegah scroll horizontal */
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">Sendy Helindra</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="waifu.html">Waifu Tanaka</a></li>
+                        <li><a href="https://wa.me/254111265467">Chat AI</a></li>
+                        <li><a href="community.html">Comunnity</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="https://wa.me/6283841951316">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/main_photo.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Sendy Helindra</h1>
+                    <p> Saya hanya seorang pria berumur 19 tahun yang cuman hobby coding aja disaat ada waktu senjang. Saya baru mempelajari Html, Css, Dan JavaScrip. Saya masih sangat awam di dunia progamer dan masih banyak lagi yang harus saya pelajari jadi mohon saran dan bantuannya kepada para senior.
+                    </p>
+                    
+                    <div class="btn-group">
+                       <a href="https://github.com/TanakaDomp/Portofolio/tree/main" class="btn active">Download Script</a>
+                       <a href="https://wa.me/6283841951316" class="btn active">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/sendy.helindra.3?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://youtube.com/@senzhndra"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://instagram.com/senzhndra"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@sen.h"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Like Yoo-Jung","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
